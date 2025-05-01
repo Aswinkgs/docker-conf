@@ -1,4 +1,4 @@
-# For older applications, use php:7.0-apache, and for newer applications, use php:8.2-apache.
+# For older applications, use php:7.0-apache
 FROM php:7.0-apache
 
 # Set the ServerName to avoid warnings

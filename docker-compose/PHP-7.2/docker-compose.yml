@@ -1,0 +1,11 @@
+services:
+    web:
+        build: conf
+        container_name: app
+        ports:
+          - "8080:80"
+        volumes:
+            - ./conf/vhosts:/etc/apache2/sites-enabled
+            - ./:/var/www
+            - ./conf/php.ini:/usr/local/etc/php/conf.d/extra-php-config.ini
+        restart: always

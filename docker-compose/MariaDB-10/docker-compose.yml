@@ -1,0 +1,14 @@
+version: '3.9'
+services:
+  mariadb:
+    image: mariadb:10.5
+    container_name: mariadb-container
+    environment:
+      MARIADB_ROOT_PASSWORD: punee8vaiheiYeikee
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./data:/var/lib/mysql
+
+# Username: root
+# Password: punee8vaiheiYeikee
